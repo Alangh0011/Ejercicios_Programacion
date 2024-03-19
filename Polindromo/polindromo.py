@@ -1,8 +1,15 @@
 def polindromo(list):
-    print(list)
-    numero_volteado = list[::-1]
+    numeros = []
+    for numero in list:
+        print(numero)
+        if (numero == "1" or numero == "2" or numero == "3" or numero == "4" or numero == "5" or numero == "6" or numero == "7" or numero == "8" or numero == "9" or numero == "0"):
+            numeros.append(numero)
+            print("es numero:",numeros)
 
-    if(numero_volteado == list):
+    numero_volteado = numeros[::-1]
+    print(numero_volteado)
+
+    if(numero_volteado == numeros):
         print("Es polindromo")
     else:
         print("No es polindromo")
@@ -13,4 +20,4 @@ def polindromo(list):
 
 # Llamada a la función con un ejemplo
 if __name__ == '__main__':
-    polindromo("head = [1,2,3,4,5]")
+    polindromo("head = [1,2,3,2,1]")
